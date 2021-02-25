@@ -1,5 +1,13 @@
 package com.company;
 
+/**
+ * @author Joshua Deanon
+ * @since February 2021
+ *
+ * AddressEntry creates another entry for user, new user possibly
+ * includes: full name, street, city, state, zip, phone,and email
+ */
+
 public class AddressEntry {
     private String firstName;
     private String lastName;
@@ -13,7 +21,7 @@ public class AddressEntry {
     public AddressEntry() {
     }
 
-    public AddressEntry(String firstName, String lastName, String street, String city, String state, Integer zip, String email,String phone) {
+    public AddressEntry(String firstName, String lastName, String street, String city, String state, int zip, String email, String phone) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.street = street;
@@ -24,18 +32,17 @@ public class AddressEntry {
         this.email = email;
     }
 
-    @Override
+
     public String toString() {
-        return "AddressEntry{" +
-                "firstName=" + firstName +
-                ", lastName=" + lastName +
-                ", street=" + street +
-                ", city=" + city +
-                ", state=" + state +
-                ", zip=" + zip +
-                ", phone=" + phone +
-                ", email=" + email +
-                '}';
+        return "\nFirst Name: " + firstName +
+                "\nLast Name: " + lastName +
+                "\nStreet: " + street +
+                "\nCity: " + city +
+                "\nState: " + state +
+                "\nZip: " + zip +
+                "\nPhone: " + phone +
+                "\nEmail:" + email +
+                "\n";
     }
 
     public String getFirstName() {
